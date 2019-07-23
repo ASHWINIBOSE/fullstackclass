@@ -1,7 +1,12 @@
-.msg {
-    color: #3e21e7;
-}
-
-body {
-    background: url('../download.png')
-}
+            .mydiv {
+                border: 5px solid black;
+                margin-top: 20px
+            }
+            
+            .msg {
+                color: #3e21e7;
+            }
+            
+            body {
+                background: url('../download.png')
+            }
