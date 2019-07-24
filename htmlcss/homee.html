@@ -2,6 +2,21 @@
 <html lang="en">
 
 <head>
+    <script>
+    function getname()
+    {var n1=document.getElementById("name1").value;
+    document.getElementById("result1").innerHTML=n1
+    var n2=document.getElementById("name2").value;
+    document.getElementById("result2").innerHTML=n2
+    var n3=document.getElementById("name3").value;
+    document.getElementById("result3").innerHTML=n3
+    var n4=document.getElementById("name4").value;
+    document.getElementById("result4").innerHTML=n4
+    var n5=document.getElementById("name5").value;
+    document.getElementById("result5").innerHTML=n5
+    var n6=document.getElementById("name6").value;
+    document.getElementById("result6").innerHTML=n6}
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,33 +29,40 @@
     <div class="container">
         <div class="row">
             <div class="col col-12 col-sm-6">
+                <h3>login</h3>
                 <div class="br">
-                    <table>
+                    <form >
+                    <table class="table">
                         <tr>
                             <td>username</td>
-                            <td><input type="text" /></td>
+                            <td><input type="text" class="form-control" id="name1"/></td>
                         </tr>
                         <tr>
                             <td>password</td>
-                            <td><input type="text" /></td>
+                            <td><input type="text" class="form-control" id="name2" /></td>
                         </tr>
                         <tr>
                             <td><button class="btn btn-primary">reset</button></td>
-                            <td><button class="btn btn-success ">submit</button></td>
+                            <td><button type="button" class="btn btn-success " onclick="getname();">submit</button></td>
                         </tr>
+                        <tr><td><p id="result1"></p></td></tr>
+                        <tr><td><p id="result2"></p></td></tr>
+
                     </table>
+                </form>
                 </div>
             </div>
             <div class="col col-12 col-sm-6">
-                <div class="br">
-                    <table>
+                <h3>registration form</h3>
+                <div class="br"><form >
+                    <table class="table">
                         <tr>
                             <td>name</td>
-                            <td><input type="text" /></td>
+                            <td><input type="text" class="form-control" id="name3" /></td>
                         </tr>
                         <tr>
                             <td>district</td>
-                            <td><select>
+                            <td><select class="form-control">
             <option>ekm</option>
             <option>tvm</option>
             <option>trissur</option>
@@ -63,21 +85,27 @@
 
                             <tr>
                                 <td>username</td>
-                                <td><input type="text" /></td>
+                                <td><input type="text" class="form-control" id="name4" /></td>
+                                
                             </tr>
                             <tr>
                                 <td>password</td>
-                                <td><input type="text" /></td>
+                                <td><input type="text" class="form-control" id="name5" /></td>
                             </tr>
                             <tr>
                                 <td>confirm password</td>
-                                <td><input type="text" /></td>
+                                <td><input type="text" class="form-control" id="name6" /></td>
                             </tr>
                             <tr>
                                 <td><button class="btn btn-primary">reset</button></td>
-                                <td><button class="btn btn-danger">register</button></td>
+                                <td><button type="button" class="btn btn-danger" onclick="getname();">register</button></td>
                             </tr>
-                    </table>
+                            <tr><td><p id="result3"></p></td></tr>
+                            <tr><td><p id="result4"></p></td></tr>
+                            <tr><td><p id="result5"></p></td></tr>
+                            <tr><td><p id="result6"></p></td></tr>
+                    </table
+                    ></form>
                 </div>
             </div>
         </div>
