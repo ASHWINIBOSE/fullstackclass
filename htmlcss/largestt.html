@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <script>
-        function getname(){
-            var n1=document.getElementById("name1").value;
-            var n2=document.getElementById("name2").value;
-            if(n1>n2){
-            document.getElementById("result1").innerHTML=n1
-            }
-            else{
-                document.getElementById("result1").innerHTML=n2
+
+<head>
+    <script>
+        function getname() {
+            var n1 = document.getElementById("name1").value;
+            var a = parseInt(n1)
+            var n2 = document.getElementById("name2").value;
+            var b = parseInt(n2)
+            if (a > b) {
+                document.getElementById("result1").innerHTML = n1
+            } else {
+                document.getElementById("result1").innerHTML = n2
             }
         }
-        </script>
-        <title>Document</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    
+    </script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 </head>
-<body> <form>
-        <table class="table"><tr>
-            <td>
-                enter the first number
-            </td>
-            <td><input type="text" class="form-control" id="name1"></td></tr>
+
+<body>
+    <h3>finding the largest number</h3>
+    <form>
+        <table class="table">
             <tr>
-                    <td>
-                        enter the second number
-                    </td>
-                    <td><input type="text" class="form-control" id="name2"></td></tr>
+                <td>
+                    enter the first number
+                </td>
+                <td><input type="text" class="form-control" id="name1"></td>
+            </tr>
+            <tr>
+                <td>
+                    enter the second number
+                </td>
+                <td><input type="text" class="form-control" id="name2"></td>
+            </tr>
             <tr>
                 <td></td>
                 <td>
                     <button type="button" class="btn btn-success" onclick="getname();">submit</button>
                 </td>
-        </tr>
-    <tr><td><p id="result1"></p></td></tr>
-  
-    </table>
+            </tr>
+            <tr>
+                <td>
+                    <p id="result1"></p>
+                </td>
+            </tr>
+
+        </table>
     </form>
-    
+
 </body>
+
 </html>
