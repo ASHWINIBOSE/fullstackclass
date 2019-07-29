@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        $(document).ready(function() {
+            $('.shw').dblclick(function() {
+                $('.text').css("background-color", "yellow");
+            });
+            $('.hd').dblclick(function() {
+                $('.text').css("background-color", "red");
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <button class="shw">show</button>
+            </td>
+            <td>
+                <button class="hd">hide</button>
+            </td>
+        </tr>
+    </table>
+    <h2 class="text">
+        full stack class
+    </h2>
+
+</body>
+
+</html>

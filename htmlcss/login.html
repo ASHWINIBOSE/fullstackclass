@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/aa.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        $(document).ready(function() {
+            $('.login').click(function() {
+                $('.table1').toggle(1000);
+            });
+            $('.registration').click(function() {
+                $('.table2').toggle(1000);
+            });
+        });
+    </script>
+    <script>
+        function getname() {
+            var n1 = document.getElementById("name1").value;
+            document.getElementById("result1").innerHTML = n1
+            var n2 = document.getElementById("name2").value;
+            document.getElementById("result2").innerHTML = n2
+            var n3 = document.getElementById("name3").value;
+            document.getElementById("result3").innerHTML = n3
+            var n7 = document.getElementById("dist").value;
+            document.getElementById("result").innerHTML = n7
+            var n4 = document.getElementById("name4").value;
+            document.getElementById("result4").innerHTML = n4
+            var n5 = document.getElementById("name5").value;
+            document.getElementById("result5").innerHTML = n5
+            var n6 = document.getElementById("name6").value;
+            document.getElementById("result6").innerHTML = n6
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-6">
+
+                <div class="br">
+                    <table>
+                        <tr>
+                            <td><button class="login"><h4>login</h4></button></td>
+                        </tr>
+                    </table>
+                    <form>
+
+                        <table class="table1">
+                            <tr>
+                                <td>username</td>
+                                <td><input type="text" class="form-control" id="name1" /></td>
+                            </tr>
+                            <tr>
+                                <td>password</td>
+                                <td><input type="text" class="form-control" id="name2" /></td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn btn-primary">reset</button></td>
+                                <td><button type="button" class="btn btn-success " onclick="getname();">submit</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="result1"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="result2"></p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="col col-12 col-sm-6">
+
+                <div class="br">
+                    <table>
+                        <tr>
+                            <td>
+                                <button class="registration">
+                                <h4>registration form</h4></button>
+                            </td>
+                        </tr>
+                        <form>
+
+                            <table class="table2">
+                                <tr>
+                                    <td>name</td>
+                                    <td><input type="text" class="form-control" id="name3" /></td>
+                                </tr>
+                                <tr>
+                                    <td>district</td>
+                                    <td>
+                                        <select id="dist" class=" form-control ">
+            <option value="ekm">ekm</option>
+            <option value="tvm">tvm</option>
+            <option value="trissur">trissur</option>
+            <option value="ktm">ktm</option>
+            <option value="kollam">kollam</option>
+            <option value="alappy">alappy</option>
+            <option value="vayanad">vayanad</option>
+            <option value="kozhikode">kozhikode</option>
+            <option value="kasargod">kasargod</option>
+            <option value="palakad">palakad</option>
+            <option value="kannur">kannur</option>
+            <option value="pattanamthitta">pattanamthitta</option>
+            <option value="idukki">idukki</option>
+            <option value="malappuram">malappuram</option>
+        </select></td>
+                                    <tr>
+                                        <td>gender</td>
+                                        <td><input type="radio" name="gender ">male <input type="radio" name="gender ">female</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>username</td>
+                                        <td><input type="text " class="form-control " id="name4 " /></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>password</td>
+                                        <td><input type="text " class="form-control " id="name5 " /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>confirm password</td>
+                                        <td><input type="text " class="form-control " id="name6 " /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-primary ">reset</button></td>
+                                        <td><button type="button " class="btn btn-danger " onclick="getname(); ">register</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p id="result3 "></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p id="result "></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p id="result4 "></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p id="result5 "></p>
+                                        </td>
+                                    </tr>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p id="result6"></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
