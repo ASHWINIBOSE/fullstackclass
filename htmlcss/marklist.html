@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./js/marklist.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/border.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <form>
+        <h1 align="center">marksheet</h1>
+        <table class="table" class="br">
+            <tr>
+                <td>name</td>
+                <td><input type="text" id="text1" class="form-control"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>sem</td>
+                <td><select id="text2" class="form-control">
+        <option value="">select sem</option>
+        <option value="s1"> sem1</option>
+        <option value="s2"> sem2</option>
+        <option value="s3"> sem3</option>
+        <option value="s4"> sem4</option>
+        <option value="s5"> sem5</option>
+        <option value="s6"> sem6</option>
+        <option value="s7"> sem7</option>
+        <option value="s8"> sem8</option>
+    </select></td>
+                <td>exam code</td>
+                <td><input type="text" id="text3" class="form-control"></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>subject 1 name</td>
+                <td><input type="text" id="text4" class="form-control"></td>
+                <td>mark obtained</td>
+                <td><input type="text" id="text5" class="form-control"></td>
+                <td>total mark</td>
+                <td><input type="text" id="text6" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>subject 2 name</td>
+                <td><input type="text" id="text7" class="form-control"></td>
+                <td>mark obtained</td>
+                <td><input type="text" id="text8" class="form-control"></td>
+                <td>total mark</td>
+                <td><input type="text" id="text9" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>subject 3 name</td>
+                <td><input type="text" id="text10" class="form-control"></td>
+                <td>mark obtained</td>
+                <td><input type="text" id="text11" class="form-control"></td>
+                <td>total mark</td>
+                <td><input type="text" id="text12" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>subject 4 name</td>
+                <td><input type="text" id="text13" class="form-control"></td>
+                <td>mark obtained</td>
+                <td><input type="text" id="text14" class="form-control"></td>
+                <td>total mark</td>
+                <td><input type="text" id="text15" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>subject 5 name</td>
+                <td><input type="text" id="text16" class="form-control"></td>
+                <td>mark obtained</td>
+                <td><input type="text" id="text17" class="form-control"></td>
+                <td>total mark</td>
+                <td><input type="text" id="text18" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>subject 6 name</td>
+                <td><input type="text" id="text19" class="form-control"></td>
+                <td>mark obtained</td>
+                <td><input type="text" id="text20" class="form-control"></td>
+                <td>total mark</td>
+                <td><input type="text" id="text21" class="form-control"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" class="btn btn-danger" onclick="getm();">generate mark list</button></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="table">
+            <tr>
+                <td>
+                    <p id="result1"></p>
+                </td>
+                <td>
+                    <p id="result2"></p>
+                </td>
+                <td>
+                    <p id="result3"></p>
+                </td>
+                <td>
+                    <p id="result4"></p>
+                </td>
+                <td>
+                    <p id="result5"></p>
+                </td>
+                <td>
+                    <p id="result6"></p>
+                </td>
+            </tr>
+        </table>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+
+                    <th>
+                        <p id="result33"></p>subject
+                    </th>
+                    <th>
+                        <p id="result34">marks obtained</p>
+                    </th>
+                    <th>
+                        <p id="result35">total marks</p>
+                    </th>
+                    <th>
+                        <p id="result36">grade</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p id="result7"></p>
+                    </td>
+                    <td>
+                        <p id="result8"></p>
+                    </td>
+                    <td>
+                        <p id="result9"></p>
+                    </td>
+                    <td>
+                        <p id="result10"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="result11"></p>
+                    </td>
+                    <td>
+                        <p id="result12"></p>
+                    </td>
+                    <td>
+                        <p id="result13"></p>
+                    </td>
+                    <td>
+                        <p id="result14"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="result15"></p>
+                    </td>
+                    <td>
+                        <p id="result16"></p>
+                    </td>
+                    <td>
+                        <p id="result17"></p>
+                    </td>
+                    <td>
+                        <p id="result18"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="result19"></p>
+                    </td>
+                    <td>
+                        <p id="result20"></p>
+                    </td>
+                    <td>
+                        <p id="result21"></p>
+                    </td>
+                    <td>
+                        <p id="result22"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="result23"></p>
+                    </td>
+                    <td>
+                        <p id="result24"></p>
+                    </td>
+                    <td>
+                        <p id="result25"></p>
+                    </td>
+                    <td>
+                        <p id="result26"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="result27"></p>
+                    </td>
+                    <td>
+                        <p id="result28"></p>
+                    </td>
+                    <td>
+                        <p id="result29"></p>
+                    </td>
+                    <td>
+                        <p id="result30"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p id="result31"></p>
+                    </td>
+                    <td>
+                        <p id="result32"></p>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
